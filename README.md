@@ -1,1 +1,4 @@
-## BIG MUFF PI REPO
+# BIG MUFF PI BUILD
+
+## Schematic:
+![Schematic](img/schematic.png)

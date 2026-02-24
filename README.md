@@ -4,4 +4,4 @@
 ![Schematic](img/kicad_schematic.png)
 
 ## LTSpice Simulation
-![Simulation](img/ltpsice_sim.png)
+![Simulation](img/ltspice_sim.png)

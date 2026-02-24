@@ -20,7 +20,7 @@ List out how to go about this jawn
 | -----                 | --------   | 
 | LTSpice Simulation    | ✅        | 
 | Schematic             | ✅        | 
-| Compoent Footprint    |            | 
+| Component Footprints  |            | 
 | PCB                   |         | 
 
 

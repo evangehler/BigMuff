@@ -1073,6 +1073,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:VDD"
 			(power)
 			(pin_numbers
@@ -1376,10 +1477,22 @@
 		(uuid "7a746ccf-17d1-49b8-a288-e88f10d9a545")
 	)
 	(junction
+		(at 71.12 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ad1a17e-62c6-411d-8b9f-e95b391697bc")
+	)
+	(junction
 		(at 86.36 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84533eb8-c43d-4f4c-aee1-53162a117076")
+	)
+	(junction
+		(at 52.07 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a1ec62d-587f-4fa0-8ca4-c43be8c04409")
 	)
 	(junction
 		(at 82.55 128.27)
@@ -1655,7 +1768,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 85.09) (xy 52.07 87.63)
+			(xy 52.07 85.09) (xy 52.07 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2175,6 +2288,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 33.02) (xy 71.12 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "893ac092-eda3-47f3-a039-00899ac3e331")
+	)
+	(wire
+		(pts
 			(xy 86.36 156.21) (xy 86.36 158.75)
 		)
 		(stroke
@@ -2365,7 +2488,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 30.48) (xy 71.12 34.29)
+			(xy 71.12 30.48) (xy 71.12 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2392,6 +2515,16 @@
 			(type default)
 		)
 		(uuid "aee07dfc-f184-47cb-b6d1-08aeba48e8d5")
+	)
+	(wire
+		(pts
+			(xy 52.07 86.36) (xy 52.07 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af52a905-b73e-4a3b-867f-698e7748745c")
 	)
 	(wire
 		(pts
@@ -3635,7 +3768,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
 			(at 146.05 63.5 0)
 			(effects
 				(font
@@ -3843,7 +3976,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
 			(at 85.09 68.58 0)
 			(effects
 				(font
@@ -4125,7 +4258,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
 			(at 232.41 66.04 0)
 			(effects
 				(font
@@ -4765,6 +4898,71 @@
 			(project ""
 				(path "/6de46571-0bbc-4198-81c1-4f2232a4d5dc"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 52.07 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b18cde9-5ab1-4271-8a76-c7e3d855f9ea")
+		(property "Reference" "#FLG02"
+			(at 52.07 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 45.974 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 52.07 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48303929-07c8-4512-aca9-224203f2949d")
+		)
+		(instances
+			(project ""
+				(path "/6de46571-0bbc-4198-81c1-4f2232a4d5dc"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -6626,6 +6824,72 @@
 			(project ""
 				(path "/6de46571-0bbc-4198-81c1-4f2232a4d5dc"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 71.12 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e403e6e1-219e-4588-b038-f422ed7559ec")
+		(property "Reference" "#FLG01"
+			(at 71.12 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 71.12 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 71.12 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c8c68a4-c8f7-4ee1-a045-c928d1a011e4")
+		)
+		(instances
+			(project ""
+				(path "/6de46571-0bbc-4198-81c1-4f2232a4d5dc"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)

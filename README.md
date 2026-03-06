@@ -16,12 +16,12 @@ List out how to go about this jawn
 
 ## Project Status
 
-| Phase                 | Status     | 
-| -----                 | --------   | 
-| LTSpice Simulation    | ✅        | 
-| Schematic             | ✅        | 
-| Component Footprints  |            | 
-| PCB                   |         | 
+| Phase                 | Status         | 
+| -----                 | --------       | 
+| LTSpice Simulation    | ✅             | 
+| Schematic             | ✅             | 
+| Component Footprints  | ✅             | 
+| PCB                   | started!        | 
 
 
 

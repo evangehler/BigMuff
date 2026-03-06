@@ -4096,7 +4096,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3b7097e7-d3a8-4642-a59e-a80d595b0359")
 		(property "Reference" "Q3"
 			(at 143.51 162.5599 0)

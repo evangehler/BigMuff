@@ -9847,6 +9847,17 @@
 			)
 		)
 	)
+	(gr_rect
+		(start 175.26 40.64)
+		(end 226.06 149.86)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "9ea1010d-2b64-41f6-bced-bdc99d7b9c12")
+	)
 	(segment
 		(start 113.7 120.93705)
 		(end 113.7 116.38)

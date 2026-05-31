@@ -9,10 +9,11 @@ This project serves as an example guitar pedal build and some best practices for
 List out how to go about this jawn
 
 ## Table of Contents
-- [Simulation](#ltspice-simulation)
-- [Bill of Materials](#bill-of-materials-bom)
 - [Hardware](#hardware)
     - [Schematic](#schematic)
+    - [PCB](#pcb)
+- [Simulation](#ltspice-simulation)
+- [Bill of Materials](#bill-of-materials-bom)
 
 ## Project Status
 
@@ -21,10 +22,15 @@ List out how to go about this jawn
 | LTSpice Simulation    | ✅             | 
 | Schematic             | ✅             | 
 | Component Footprints  | ✅             | 
-| PCB                   | started!        | 
+| PCB                   | ✅              | 
 
 
+## Hardware 
+### Schematic:
+![Schematic](img/kicad_schematic.png)
 
+### PCB:
+![PCB](img/kicad_pcb.png)
 
 ## LTSpice Simulation
 ![Simulation](img/ltspice_sim.png)
@@ -48,8 +54,3 @@ fix this later lmao
 | 1k Resistor               | 1             |      |
 | 150 Resistor              | 2             |     |
 | 100 Resistor              | 1             | R3     |
-
-
-## Hardware 
-### Schematic:
-![Schematic](img/kicad_schematic.png)

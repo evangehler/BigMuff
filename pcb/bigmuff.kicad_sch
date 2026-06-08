@@ -2376,9 +2376,9 @@
 		)
 		(uuid "588adbd4-58e8-416d-b53e-f9875e791f60")
 	)
-	(text "TEST POINTS"
+	(text "PROBE POINTS"
 		(exclude_from_sim no)
-		(at 216.916 103.124 0)
+		(at 235.712 103.124 0)
 		(effects
 			(font
 				(size 2.54 2.54)

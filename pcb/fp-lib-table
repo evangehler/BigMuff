@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "bigmuff") (type "KiCad") (uri "${KIPRJMOD}/bigmuff.pretty") (options "") (descr ""))
+)

@@ -431,7 +431,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:NRJ4HF"
+		(symbol "Connector_Audio:NMJ4HFD2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -447,7 +447,7 @@
 					)
 				)
 			)
-			(property "Value" "NRJ4HF"
+			(property "Value" "NMJ4HFD2"
 				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -457,8 +457,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NRJ4HF_Horizontal"
-				(at -1.27 5.08 0)
+			(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HFD2_Horizontal"
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -468,8 +468,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.neutrik.com/en/product/nrj4hf"
-				(at -1.27 5.08 0)
+			(property "Datasheet" "https://www.neutrik.com/en/product/nmj4hfd2"
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -479,7 +479,7 @@
 					)
 				)
 			)
-			(property "Description" "Slim Jacks, 6.35mm (1/4in) mono jack, switched, fully threaded nose"
+			(property "Description" "M Series, 6.35mm (1/4in) mono jack, switched, with full threaded nose and straight PCB pins"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -490,7 +490,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "audio jack dual receptacle mono headphones phone TS connector neutrik"
+			(property "ki_keywords" "audio jack receptacle mono headphones phone TS connector neutrik"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -512,7 +512,7 @@
 					)
 				)
 			)
-			(symbol "NRJ4HF_0_1"
+			(symbol "NMJ4HFD2_0_1"
 				(rectangle
 					(start -2.54 0)
 					(end -3.81 -2.54)
@@ -536,7 +536,7 @@
 					)
 				)
 			)
-			(symbol "NRJ4HF_1_1"
+			(symbol "NMJ4HFD2_1_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
@@ -1420,6 +1420,39 @@
 					)
 				)
 			)
+			(property "Sim.Device" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" "POT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "resistor variable"
 				(at 0 0 0)
 				(show_name no)
@@ -2047,6 +2080,28 @@
 				)
 			)
 			(property "Description" "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "NPN"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=C 2=B 3=E"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2967,6 +3022,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a72594f3-57d7-4640-8e01-3889435a79c0")
+	)
+	(junction
+		(at 149.86 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adec138c-3c76-451b-b705-084d8f6a4707")
 	)
 	(junction
 		(at 41.91 49.53)
@@ -4906,16 +4967,6 @@
 		)
 		(uuid "ffe018cb-5e72-482b-8c25-cba54d29aa4f")
 	)
-	(label "VDD"
-		(at 149.86 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "64719151-f408-40ff-8f5d-813e6a6e155c")
-	)
 	(global_label "BOOST_OUT"
 		(shape passive)
 		(at 208.28 115.57 180)
@@ -5513,7 +5564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 138.1252 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -6122,7 +6173,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:NRJ4HF")
+		(lib_id "Connector_Audio:NMJ4HFD2")
 		(at 182.88 130.81 180)
 		(unit 1)
 		(body_style 1)
@@ -6142,7 +6193,7 @@
 				)
 			)
 		)
-		(property "Value" "NRJ4HF"
+		(property "Value" "NMJ4HFD2"
 			(at 183.515 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6152,8 +6203,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HFD3_Horizontal"
-			(at 184.15 135.89 0)
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HFD2_Horizontal"
+			(at 182.88 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6163,8 +6214,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.neutrik.com/en/product/nrj4hf"
-			(at 184.15 135.89 0)
+		(property "Datasheet" "https://www.neutrik.com/en/product/nmj4hfd2"
+			(at 182.88 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6174,7 +6225,7 @@
 				)
 			)
 		)
-		(property "Description" "Slim Jacks, 6.35mm (1/4in) mono jack, switched, fully threaded nose"
+		(property "Description" "M Series, 6.35mm (1/4in) mono jack, switched, with full threaded nose and straight PCB pins"
 			(at 182.88 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -6970,7 +7021,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical"
+		(property "Footprint" "bigmuff:Potentiometer_Alpha_RD901F-40-00D_RoundLegs"
 			(at 256.54 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6993,6 +7044,39 @@
 			)
 		)
 		(property "Description" "Potentiometer"
+			(at 256.54 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 256.54 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 256.54 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
 			(at 256.54 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -7053,7 +7137,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 71.12 48.5648 0)
 			(hide yes)
 			(show_name no)
@@ -7132,7 +7216,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 54.61 37.1348 0)
 			(hide yes)
 			(show_name no)
@@ -7214,7 +7298,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical"
+		(property "Footprint" "bigmuff:Potentiometer_Alpha_RD901F-40-00D_RoundLegs"
 			(at 73.66 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7237,6 +7321,39 @@
 			)
 		)
 		(property "Description" "Potentiometer"
+			(at 73.66 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 73.66 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 73.66 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
 			(at 73.66 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7296,7 +7413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 118.11 70.1548 0)
 			(hide yes)
 			(show_name no)
@@ -7573,6 +7690,28 @@
 				)
 			)
 		)
+		(property "Sim.Device" "NPN"
+			(at 204.47 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 204.47 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b59bf55f-06dc-4eb2-86fc-ee3b9f1f037a")
 		)
@@ -7586,6 +7725,84 @@
 			(project "bigmuff"
 				(path "/6de46571-0bbc-4198-81c1-4f2232a4d5dc"
 					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 149.86 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3de88e44-cc89-4f80-a776-72a1110ac380")
+		(property "Reference" "#PWR011"
+			(at 149.86 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 149.86 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 149.86 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d717f76-4730-4778-97b5-b5d7dc88d4f0")
+		)
+		(instances
+			(project "bigmuff"
+				(path "/6de46571-0bbc-4198-81c1-4f2232a4d5dc"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7703,7 +7920,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical"
+		(property "Footprint" "bigmuff:Potentiometer_Alpha_RD901F-40-00D_RoundLegs"
 			(at 67.31 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -7726,6 +7943,39 @@
 			)
 		)
 		(property "Description" "Potentiometer"
+			(at 67.31 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 67.31 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 67.31 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
 			(at 67.31 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -8412,7 +8662,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 36.83 129.8448 0)
 			(hide yes)
 			(show_name no)
@@ -8620,7 +8870,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 134.62 39.37 270)
 		(unit 1)
 		(body_style 1)
@@ -8650,7 +8900,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 130.81 40.3352 0)
 			(hide yes)
 			(show_name no)
@@ -8672,7 +8922,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 134.62 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8889,7 +9139,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_Kycon_KLDX-0202-xC_Horizontal"
+		(property "Footprint" "bigmuff:BarrelJack_Tayda_A-4118_Horizontal"
 			(at 101.6 115.824 0)
 			(hide yes)
 			(show_name no)
@@ -9152,7 +9402,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 251.46 34.5948 0)
 			(hide yes)
 			(show_name no)
@@ -9269,6 +9519,28 @@
 				)
 			)
 		)
+		(property "Sim.Device" "NPN"
+			(at 152.4 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 152.4 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "b7475399-485b-40db-8ded-e7b3eaab6bf7")
 		)
@@ -9346,6 +9618,28 @@
 			)
 		)
 		(property "Description" "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"
+			(at 57.15 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 57.15 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
 			(at 57.15 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -9851,7 +10145,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 35.56 57.15 270)
 		(unit 1)
 		(body_style 1)
@@ -9881,7 +10175,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 31.75 58.1152 0)
 			(hide yes)
 			(show_name no)
@@ -9903,7 +10197,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 35.56 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -10871,7 +11165,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 186.69 39.37 270)
 		(unit 1)
 		(body_style 1)
@@ -10901,7 +11195,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 182.88 40.3352 0)
 			(hide yes)
 			(show_name no)
@@ -10923,7 +11217,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 186.69 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11222,7 +11516,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 146.05 53.6448 0)
 			(hide yes)
 			(show_name no)
@@ -11349,7 +11643,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:NRJ4HF")
+		(lib_id "Connector_Audio:NMJ4HFD2")
 		(at 173.99 111.76 0)
 		(mirror x)
 		(unit 1)
@@ -11370,7 +11664,7 @@
 				)
 			)
 		)
-		(property "Value" "NRJ4HF"
+		(property "Value" "NMJ4HFD2"
 			(at 173.355 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11380,8 +11674,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HFD3_Horizontal"
-			(at 172.72 116.84 0)
+		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HFD2_Horizontal"
+			(at 173.99 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11391,8 +11685,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.neutrik.com/en/product/nrj4hf"
-			(at 172.72 116.84 0)
+		(property "Datasheet" "https://www.neutrik.com/en/product/nmj4hfd2"
+			(at 173.99 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11402,7 +11696,7 @@
 				)
 			)
 		)
-		(property "Description" "Slim Jacks, 6.35mm (1/4in) mono jack, switched, fully threaded nose"
+		(property "Description" "M Series, 6.35mm (1/4in) mono jack, switched, with full threaded nose and straight PCB pins"
 			(at 173.99 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -11784,7 +12078,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 255.5748 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -12264,7 +12558,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 63.5 123.4948 0)
 			(hide yes)
 			(show_name no)
@@ -12382,6 +12676,28 @@
 				)
 			)
 		)
+		(property "Sim.Device" "NPN"
+			(at 48.26 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 48.26 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "561b4e65-ac20-4395-9191-9aa8b85b0819")
 		)
@@ -12431,7 +12747,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 170.18 70.1548 0)
 			(hide yes)
 			(show_name no)
@@ -12670,7 +12986,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P7.50mm_Horizontal"
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 198.12 53.6448 0)
 			(hide yes)
 			(show_name no)
